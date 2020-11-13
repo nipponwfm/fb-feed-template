@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+body .feed {
+  width: 500px;
+  background-color: #242527;
+}
+
+body .feed .owner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 70% 10%;
+      grid-template-columns: 20% 70% 10%;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  background-color: gray;
+  padding: 10px;
+}
+
+body .feed .owner .avatar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+body .feed .owner .more-options {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+body .feed .description {
+  background-color: green;
+  margin: 10px;
+}
+
+body .feed .attachment {
+  height: 100px;
+  background-color: orange;
+}
+
+body .feed .status, body .feed hr, body .feed .function {
+  margin: 10px;
+}
+
+body .feed .status {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  background-color: pink;
+}
+
+body .feed .status .react-counter .icon-reacted, body .feed .status .react-counter .count {
+  display: inline;
+}
+
+body .feed .status .comment-counter {
+  text-align: right;
+}
+
+body .feed hr {
+  border: none;
+  border-top: 1px solid gray;
+}
+
+body .feed .function {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+body .feed .function span p {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
